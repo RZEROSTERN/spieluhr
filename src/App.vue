@@ -1,8 +1,23 @@
 <template>
   <div id="app">
-    <router-view/>
+    <div class="grid grid-cols-8 gap-0">
+      <div class="col-span-1">
+        <Sidebar />
+      </div>
+      <div class="col-span-7">
+        <router-view/>
+      </div>
+    </div>
   </div>
 </template>
+
+<script>
+import Sidebar from './components/Sidebar.vue';
+
+export default {
+  components: {Sidebar}
+}
+</script>
 
 <style lang="scss">
 #app {
