@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="font-sans">
     <div class="grid grid-cols-8 gap-0">
       <div class="col-span-1">
         <Sidebar />
@@ -8,14 +8,18 @@
         <router-view/>
       </div>
     </div>
+    <div class="grid grid-cols-1">
+      <Player />
+    </div>
   </div>
 </template>
 
 <script>
 import Sidebar from './components/Sidebar.vue';
+import Player from './components/Player.vue';
 
 export default {
-  components: {Sidebar}
+  components: {Sidebar, Player}
 }
 </script>
 
