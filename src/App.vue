@@ -1,10 +1,10 @@
 <template>
   <div id="app" class="font-sans static">
     <div class="grid grid-cols-8 gap-0">
-      <div class="col-span-1">
+      <div class="col-span-2 xl:col-span-1">
         <Sidebar />
       </div>
-      <div class="col-span-7">
+      <div class="col-span-6 xl:col-span-7">
         <router-view/>
       </div>
     </div>
